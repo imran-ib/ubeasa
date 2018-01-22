@@ -1,0 +1,60 @@
+.navbar{
+	height: 75px;
+	display: grid;
+	grid-auto-columns: 1fr 2fr;
+	grid-template-rows:auto ;
+	grid-template-areas: 
+		"logo links";	
+		align-items: center;
+
+		@@mixin atMedium{
+			grid-auto-columns: 1fr 1fr 2fr;
+			grid-template-areas: 
+			"logo . links";	
+		}
+
+		&__logo{
+			grid-area: logo;
+			
+			& > a{
+				font-weight: 700;
+				font-size: 1.2rem;
+			}
+
+			&-dot{
+				color: $siteRed;
+			}
+
+		}
+
+		&__links{
+			grid-area: links;
+			display: none;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+
+			@mixin atMedium{
+				display: flex;
+			}
+		}
+
+		& ul li{
+			margin-right: 15px;
+
+			&:last-type{
+				margin-right: 0px;
+			}
+		}
+
+
+		&__mobile-manu{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			visibility: visible;
+
+			@mixin atMedium{
+			visibility: hidden;
+			}
+		}
+}
