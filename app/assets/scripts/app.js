@@ -1,1 +1,5 @@
-import $ from "jquery";
+$(document).ready(function() {
+	$('.flexslider').flexslider({
+    animation: "slide"
+  });
+});

@@ -1,3 +1,28 @@
-.larger-hero{
+.large-hero{
+	
+	&__img-container{
+		width: 100%;
+	}
 
+	&__text{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		transform: translateY(-200%);
+
+		& h2{
+			font-size: 3rem;
+			color: #fff;
+			font-weight: 200;
+		}
+
+		& a {
+			background-color: $siteRed;
+			padding: 1.3rem;
+			border: 1px solid $siteRed;
+			border-radius: 5px;
+			color: #ffffff;
+		}
+	}
 }

@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ubeasa</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="HTML5 Website Template by Imran Irshad" />
+	<meta name="keywords" content=" website templates, free html5, free template, free , free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="Imran Irshad" />
+	<title>Ubeasa clone</title>
 	<link rel="stylesheet" href="temp/styles/styles.css">
 </head>
-<body class="site-grid">
-		
+<body id="home">
 		<nav class="navbar">
 			<div class="container navbar__logo">
 				<a href="#">UBEASA <span class="navbar__logo-dot">.</span></a>
@@ -17,18 +21,60 @@
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#about">About Us</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="#home">External</a></li>
-						
+				<li><a href="#home">External</a></li>		
 			</ul>
 
 			<div class="navbar__mobile-manu"> hello</div>
 		</nav>
+   
    <section class="large-hero">
-    	<img src="assets/images/img_bg_1.jpg" alt="">
+    	
+    	<div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		    	<div class="large-hero__img-container">
+		    		
+		      		<img class="large-hero__img" src="assets/images/img_bg_1.jpg" />
+		    	</div>
+		      	
+		      	<div class="large-hero__text">
+					<h2>Explore the new template.</h2>
+		   			<p><a href="http://twitter.com/freshdesignweb" target="_blank" class="btn btn-primary btn-lg">Follow @freshdesignweb</a></p>
+		      	</div>	
+		    </li>
+		    <li>
+		    	<div class="large-hero__img-container">
+		      <img class="large-hero__img" src="assets/images/img_bg_2.jpg"/>
+		    		
+		    	</div>
+		      	<div class="large-hero__text">
+					<h2>Creative. Innovative.Intuitive.</h2>
+		   			<a href="#" class="btn btn-primary btn-lg">Get started</a>
+		      	</div>
+		    </li>
+		    <li>
+		    	<div class="large-hero__img-container">
+		    		
+		      <img class="large-hero__img" src="assets/images/img_bg_3.jpg" />
+		    	</div>
+		      	<div class="large-hero__text">
+					<h2>A new experience.</h2>
+		   			<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
+		      	</div>
+		    </li>
+		  </ul>
+		</div>
     	
     </section>
 
 
-<script src="temp/scripts/app.js"></script> 	
+    <section id="ervices">
+    	<h1>Services</h1>
+    </section>
+
+
+<script src="assets/scripts/lib/jquery.js"></script> 	
+<script src="assets/scripts/lib/jquery.flexslider-min.js"></script> 	
+<script src="temp/scripts/app.js"></script>
 </body>
 </html>
