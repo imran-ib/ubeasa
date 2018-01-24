@@ -1,7 +1,10 @@
-.large-hero{
-	
+/* .large-hero{
+	margin-bottom: 10px;
 	&__img-container{
+		display: block;
 		width: 100%;
+		max-height: 100%;
+		background-size: cover;
 	}
 
 	&__text{
@@ -25,4 +28,4 @@
 			color: #ffffff;
 		}
 	}
-}
+} */
