@@ -3962,7 +3962,6 @@ html[xmlns] .flexslider .slides {
 
 .services{
 	display: grid;
-	grid-gap: 0 10px;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto auto auto auto auto;
 	grid-template-areas: 
