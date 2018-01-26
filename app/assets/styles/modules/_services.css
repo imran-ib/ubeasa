@@ -1,121 +1,88 @@
 .services{
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto auto auto auto auto auto auto;
-	grid-template-areas: 
-	"main"
-	"left01 "
-	"left02 "
-	"left03 "
-	"right01"
-	"right02"
-	"right03"
-	;
-
-		@mixin atLarge	{
-			grid-template-columns: 2fr 2fr;
-			grid-template-rows: auto auto auto auto;
-			grid-template-areas: 
-			"main ."
-			"left01 right01"
-			"left02 right02"
-			"left03 right03";
-		}
-
+		position: relative;
+	
 	&__main{
-		grid-area: main;
+	width: 100%;
+	clear: left;
+	text-align: center;
+	padding: 0;
 
-		& h1{
-			font-size: 2.1rem;
-			position: relative;
-			margin-bottom: 1.9rem;
-
-		}
-		&::after{
-
-			@mixin atLarge{
-			position: absolute;
-			bottom: -155px;
-			width: 50px;
-			height: 2px;
-			background-color: red;
-			content: " ";
+			& h1{
+				font-size: 2rem;
 
 			}
-			
-		}
-		& p{
-			font-size: 1.4rem;
-			font-weight: 200;
+
+			& p{
+				font-size: 1.2rem;
+				line-height: 1.5;
+			}
+
+	@mixin atLarge{
+		width: 500px;
+		text-align: left;
+	}
+		
+	}
+	&__left{
+		lost-waffle: 1;
+		width: 100%;
+		text-align: center;
+
+		@mixin atLarge{
+			width: 450px;
+			lost-waffle: 1/2;
+			margin-right: lost-vars('gutter-local');
+			text-align: left;
+
+		}		
+		
+	}
+
+	&__right{
+			lost-waffle: 1;
 			width: 100%;
+			text-align: center;
 
 
+		@mixin atLarge{
+			text-align: left;
+			lost-waffle: 1/2;
+			 width: 500px; 
+			 margin-left: lost-vars('gutter-local');
+		
+		}
+		 
+		
+	}
+
+
+	&__icon{
+		position: relative;
+		top: 0;
+		font-size: 2.5rem;
+		opacity: .2;
+
+
+		@mixin atLarge{
+			left: -60px;
+			top: 65px;
 		}
 
+		
 	}
 
 	&__sub-heading{
-		color: $siteRed;
+		color: rgba($siteRed, .8);
 		font-size: 1.5rem;
-		font-weight: 200;
+		font-weight: 300;
 
-	}
-
-	&__icon-larger{
-		font-size: 3rem;
-		position: relative;
-		top: 0;
-		right: 0;
-
-		@mixin atSmall{
-			font-size: 3rem;
-			position: relative;
-			top: 70px;
-			right: 80px;
-			width: 100%;
-			margin: 0 auto;
-		}
 	}
 
 	&__text{
-		font-size: 1.1rem;
 		line-height: 1.5;
+		color: rgba(#000 .7);
+		margin-right: 30px;
 
 	}
-	&__left01{
-		grid-area: left01;
-		margin-right: 0;
 
-		@mixin atLarge{
-		margin-right: 100px;
-		}
-	}
-	&__left02{
-		grid-area: left02;
-		margin-right: 0;
-
-		@mixin atSmall{
-		margin-right: 100px;
-
-
-		}
-	}
-	&__left03{
-		grid-area: left03;
-		margin-right: 0;
-
-		@mixin atSmall{
-		margin-right: 100px;
-
-		}
-	}
-	&__right01{
-		grid-area: right01;
-	}
-	&__right02{
-		grid-area: right02;
-	}
-	&__right03{
-		grid-area: right03;
-	}
 }

@@ -6,6 +6,7 @@ var nested = require('postcss-nested');
 var imports = require('postcss-import');
 var mixins = require("postcss-mixins");
 var hexrbga = require('postcss-hexrgba');
+var lost = require('lost');
 
 
 gulp.task('styles' , function(){
@@ -16,6 +17,7 @@ gulp.task('styles' , function(){
 				simpleVars,
 				nested,
 				hexrbga,
+				lost,
 				autoprefixer
 
 			]))
