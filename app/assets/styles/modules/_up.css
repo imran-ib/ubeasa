@@ -1,0 +1,10 @@
+.up{
+	overflow: hidden;
+	padding:15px 20px;
+	background-color: rgba(0 , 0 , 0, .3);
+	color: #fff;
+	position:fixed;
+	right: 30px;
+	bottom: 25px;
+	border-radius: 5px;
+}

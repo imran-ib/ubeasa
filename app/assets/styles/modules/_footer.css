@@ -1,0 +1,40 @@
+.footer{
+
+	overflow: hidden;
+		@mixin clearfix;
+	background-color: #fff;
+	margin-top: -50px;
+	
+	&__content{
+
+	width: 300px;
+	float: none;
+
+		@mixin atMedium{
+			float: left;
+			text-align: center;
+		}
+
+	& p{
+		font-size: .8rem;
+	}
+	}
+
+	&__social{
+		float: none;
+		margin: auto;
+		padding-bottom: 30px;
+
+		@mixin atMedium{
+			float: right;
+		}
+
+	}
+
+	&__icons{
+		padding: 15px;
+		font-size: 1.5rem;
+		color: $siteRed;
+
+	}
+}

@@ -1,0 +1,58 @@
+.about{
+	overflow: hidden;
+	background-color: #fff;
+	&__content{
+		margin-top: 70px;
+		margin-bottom: 70px;
+
+		& p{
+			width: 400px;
+			@mixin atMedium{
+				width: 800px;
+			}
+		}
+
+	}
+
+	&__img{
+		display: block;
+		background-size: cover;
+
+	}
+
+	&__link{
+		font-size: .8rem;
+		width: 300px;
+		margin: 0 auto;
+		transform: translateY(-300%);
+
+
+		@mixin atMedium{
+			width: 1000px;
+			font-size: 1.2rem;
+			transform: translateY(-1150%);
+		}
+
+		& h2{
+		color: #fff;
+		font-weight: 200;
+		}
+
+		@mixin atMedium{
+
+		}
+	}
+
+	&__email{
+
+		& a{
+			color: $siteRed;
+
+			&:hover{
+				color: #fff;
+			}
+
+		}
+
+	}
+}

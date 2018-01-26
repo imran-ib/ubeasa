@@ -29,3 +29,57 @@
 		}
 	}
 } */
+
+
+.large-hero{
+	overflow: hidden;
+	&__text{
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		transform: translateY(-200%);
+
+		@mixin atSmall{
+		width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		transform: translateY(-250%);
+		}
+
+		@mixin atLarge{
+		width: 1150px;
+		transform: translateY(-350%);
+		}
+	}
+
+	&__heading{
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: #fff;
+
+		@mixin atSmall{
+			font-size: 2rem;
+		}
+
+		@mixin atMedium{
+			font-size: 3rem;
+		}
+	}
+
+	&__btn{
+		background-color: rgba($siteRed , .8);
+		color: #fff;
+		padding: 10px;
+		border-radius: 10px;
+
+
+		@mixin atMedium{
+			padding: 25px;
+		}
+
+		&:hover{
+			color: #fff;
+			background-color: rgba($siteRed , .7);;
+		}
+	}
+}

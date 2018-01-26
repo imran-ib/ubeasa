@@ -1,11 +1,14 @@
 .services{
-		position: relative;
+	overflow: hidden;
+	position: relative;
+	padding-left: 3rem;
 	
 	&__main{
 	width: 100%;
-	clear: left;
+	clear: right;
 	text-align: center;
 	padding: 0;
+	margin: 0 auto;
 
 			& h1{
 				font-size: 2rem;
@@ -13,12 +16,20 @@
 			}
 
 			& p{
-				font-size: 1.2rem;
+				width: 280px;
+				font-size: 1rem;
 				line-height: 1.5;
+
+				@mixin atMedium{
+					width: 550px;
+				}
+
+				@mixin atMedium{
+					width: 800px;
+				}
 			}
 
 	@mixin atLarge{
-		width: 500px;
 		text-align: left;
 	}
 		
@@ -28,11 +39,12 @@
 		width: 100%;
 		text-align: center;
 
-		@mixin atLarge{
-			width: 450px;
+		@mixin atMedium{
+			width: 400px;
 			lost-waffle: 1/2;
 			margin-right: lost-vars('gutter-local');
 			text-align: left;
+			padding-left: 18px;
 
 		}		
 		
@@ -44,10 +56,10 @@
 			text-align: center;
 
 
-		@mixin atLarge{
+		@mixin atMedium{
 			text-align: left;
 			lost-waffle: 1/2;
-			 width: 500px; 
+			 width: 400px; 
 			 margin-left: lost-vars('gutter-local');
 		
 		}
