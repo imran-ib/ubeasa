@@ -4,8 +4,9 @@
 @import "base/_mixins";
 @import "base/_container";
 @import "lib/font-awesome";
-@import "lib/flexslider";
 @import "lib/animate";
+@import "lib/owl.carousel";
+@import "lib/owl.theme.default";
 @import "modules/_large-hero";
 @import "modules/_nav-bar";
 @import "modules/_services";
