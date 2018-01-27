@@ -5,6 +5,7 @@
 @import "base/_container";
 @import "lib/font-awesome";
 @import "lib/flexslider";
+@import "lib/animate";
 @import "modules/_large-hero";
 @import "modules/_nav-bar";
 @import "modules/_services";
