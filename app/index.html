@@ -8,10 +8,12 @@
 	<meta name="keywords" content=" website templates, free html5, free template, free , free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="Imran Irshad" />
 	<title>Ubeasa clone</title>
+	  <!--build:css assets/styles/styles.css-->
 	<link rel="stylesheet" href="temp/styles/styles.css">
+		<!--endbuild-->
 </head>
 <body id="home">
-		<nav class="navbar">
+		<nav class="navbar animated slideInDown">
 			<div class="container navbar__logo">
 				<a href="#">UBEASA <span class="navbar__logo-dot">.</span></a>
 			</div>
@@ -28,55 +30,14 @@
 		</nav>
    
    <section class="large-hero">
-   			<img class="large-hero__img" src="assets/images/img_bg_1.jpg" />
-
-   			<div class="large-hero__text">
-					<h2 class="large-hero__heading">Explore the new template.</h2>
-		   			<a href="http://twitter.com/freshdesignweb" target="_blank" class="large-hero__btn">Follow @freshdesignweb</a>
-		      	</div>	
-    	
-    	<!-- <div class="flexslider">
-		  <ul class="slides">
-		    <li>
-		    	<div class="large-hero__img-container">
-		    		
-		      		<img class="large-hero__img" src="assets/images/img_bg_1.jpg" />
-		    	</div>
-		      	
-		      	<div class="large-hero__text">
-					<h2>Explore the new template.</h2>
-		   			<p><a href="http://twitter.com/freshdesignweb" target="_blank" class="btn btn-primary btn-lg">Follow @freshdesignweb</a></p>
-		      	</div>	
-		    </li>
-		    <li>
-		    	<div class="large-hero__img-container">
-		      <img class="large-hero__img" src="assets/images/img_bg_2.jpg"/>
-		    		
-		    	</div>
-		      	<div class="large-hero__text">
-					<h2>Creative. Innovative.Intuitive.</h2>
-		   			<a href="#" class="btn btn-primary btn-lg">Get started</a>
-		      	</div>
-		    </li>
-		    <li>
-		    	<div class="large-hero__img-container">
-		    		
-		      <img class="large-hero__img" src="assets/images/img_bg_3.jpg" />
-		    	</div>
-		      	<div class="large-hero__text">
-					<h2>A new experience.</h2>
-		   			<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
-		      	</div>
-		    </li>
-		  </ul>
-		</div>
-    	
-    </section>
- -->
- </section>
-  
-    	
-    	<div id="services" class="container services">
+   			
+   			<div class="owl-carousel owl-theme">
+   				<img class="animated zoomIn large-hero__img" src="assets/images/img_bg_1.jpg" />
+   				<img class="animated zoomIn large-hero__img" src="assets/images/img_bg_2.jpg" />
+   				<img class="animated zoomIn large-hero__img" src="assets/images/img_bg_3.jpg" />
+   			</div>
+   	
+   	<div id="services" class="container services">
     		
     		<div class="services__main">
     			<h1>Services</h1>
@@ -160,18 +121,16 @@
 			</div>
 
 			<div class="portfolio__images">
-				<img src="assets/images/img_1.jpg" alt="portfolio image">
-				<img src="assets/images/img_2.jpg" alt="portfolio image">
-				<img src="assets/images/img_3.jpg" alt="portfolio image">
-				<img src="assets/images/img_4.jpg" alt="portfolio image">
-				<img src="assets/images/img_5.jpg" alt="portfolio image">
-				<img src="assets/images/img_6.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_1.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_2.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_3.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_4.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_5.jpg" alt="portfolio image">
+					<img class="portfolio__zoom" src="assets/images/img_6.jpg" alt="portfolio image">
 			</div>
     </section>
-		
-
-		<div id="faqs" class="faqs container">
 			
+		<section class="container">
 			<div class="portfolio__main services__main portfolio--center">
 				<h1>Frequently Ask Questions</h1>
 				<p>natus expedita doloremque id possimus! Corrupti corporis, reiciendis dolorem, cum nostrum ducimus? Eaque provident, labore.</p>
@@ -179,80 +138,37 @@
 			
 			<div class="faqs__content">
 				<div class="faqs__quiz">
-					 
-					 <div class="faqs__icon">
-						<i class="fa fa-plus" aria-hidden="true"></i>		
-					 </div>
-					
-					<div>
-						<h3>What is uBeasa?</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
+					<h3 class="faqs__reveal">What is uBeasa?</h3>
+					<p class="hidden animated fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
 
 				<div class="faqs__quiz">
-					
-					<div class=" faqs__icon">
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</div>
-					<div>
-						<h3>I have technical problem, who do I email? </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
-					
+					<h3 class="faqs__reveal">I have technical problem, who do I email? </h3>
+					<p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
 				
 				<div class="faqs__quiz"  >
-					
-					<div class=" faqs__icon"">
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</div>
-					
-					<div>
-						<h3>How do I use uBeasa features? </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
+					<h3 class="faqs__reveal">How do I use uBeasa features? </h3>
+					<p class="hidden animated fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
 
 				<div class="faqs__quiz">
-
-					<div class=" faqs__icon">
-						 <i class="fa fa-plus" aria-hidden="true"></i>
-					</div>
-					<div>
-						<h3>What language are available?</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
-					
+					<h3 class="faqs__reveal">What language are available?</h3>
+					<p class="hidden animated fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
 
 				<div class="faqs__quiz">
-					
-					<div class=" faqs__icon">
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</div>
-					
-					<div>
-						<h3>Can I have a username that is already taken? </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
+					<h3 class="faqs__reveal">Can I have a username that is already taken? </h3>
+					<p class="hidden animated fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
 
 				<div class="faqs__quiz">
-					
-					<div class=" faqs__icon">
-						<i class="fa fa-plus" aria-hidden="true"></i>
-					</div>
-					
-					<div>
-						<h3>Is uBeasa free? </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
-					</div>
+					<h3 class="faqs__reveal">Is uBeasa free? </h3>
+					<p class="hidden animated fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis hic debitis deleniti ea expedita, quae soluta quibusdam recusandae distinctio quasi consequatur dolores, id esse sequi, omnis animi est quas.</p>
 				</div>
-			</div>
-			
 		</div>
 
+	</section>
 
 		<div id="about" class="about">
 			<div class="portfolio__main services__main portfolio--center about__content">
@@ -290,13 +206,11 @@
 			<a href="#home"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 		</div>
 
-
-
-   
-
-
+<!--build:js assets/scripts/app.js-->
 <script src="assets/scripts/lib/jquery.js"></script> 	
-<script src="assets/scripts/lib/jquery.flexslider-min.js"></script> 	
+<script src="assets/scripts/lib/owl.carousel.js"></script>
 <script src="temp/scripts/app.js"></script>
+
+<!--endbuild-->
 </body>
 </html>

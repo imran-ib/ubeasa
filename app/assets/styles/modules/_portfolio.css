@@ -23,10 +23,17 @@
 		
 	}
 
+
+
 	&__images > img{
 		margin-top: 40px;
 		lost-column: 1/;
 		border-radius: 10px;
+		transition-duration: 1s;
+			
+			&:hover{
+				transform: scale(1.1);
+			}
 
 		@mixin atMedium{
 		lost-column: 1/2;
